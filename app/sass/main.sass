@@ -54,6 +54,7 @@ ul
 	width: 100%
 	margin: auto
 	overflow: hidden
+	background-color: #DAE3E6 
 
 .w_1200
 	max-width: 1200px
@@ -66,33 +67,25 @@ b, strong
 	font-family: MuseoSansCyrl700
 
 .top
-	background-color: #36a6cf 
+	background-color: #f5f5f5 
 	position: relative
 
 .top, .top .w_1200 
-	height: 95px
+	height: 107px
+
+.top .w_1200 
+	position: relative
 
 .logo 
-	margin-top: 27px
 	display: block
-
-.col-mnu 
-	//position: absolute
-	//right: -50px
-	//bottom: 0
-	background-color: #F2F2F2 
-	margin-top: 15px
-	box-sizing: border-box
-
-.gray_line 
 	position: absolute
-	right: 0
-	bottom: 0
-	height: 42px
-	width: 700px
-	background-color: #F2F2F2
-	z-index: 0
+	left: 15px
+	top: 0
+	z-index: 100
 
+.col-mnu  
+	margin-top: 12px
+	box-sizing: border-box
 
 .top_mnu
 	float: left
@@ -111,8 +104,7 @@ b, strong
 			margin-left: 20px
 		&:last-child 
 			margin-right: 20px
-		
-		
+				
 	a 		
 		color: rgb(55, 55, 55)
 		display: block
@@ -120,22 +112,24 @@ b, strong
 		font-size: 14px
 		padding: 13px 0
 		line-height: 1
-		border-bottom: 2px solid #F2F2F2 
 		box-sizing: border-box
 		&:hover
-			border-bottom: 2px solid rgb(0, 101, 138)
 			text-decoration: none
+			color: rgb(255, 102, 0) 
 			
 .active a 
-	border-bottom: 2px solid rgb(0, 101, 138)
 	text-decoration: none
-	
+	color: rgb(255, 102, 0) 
+
+.top_contacts 
+	color: #000 
+	margin-top: 25px
+
 .top_phone
-	color: white
+	color: #000
 	font-family: MuseoSansCyrl700
 	font-size: 18px
 	text-transform: uppercase
-	margin-top: 20px
 	background: url("../img/top_icon_phone.png") no-repeat left center
 	padding-left: 22px
 	float: left
@@ -143,11 +137,10 @@ b, strong
 	
 .top_mail
 	box-sizing: border-box
-	margin-top: 21px
 	float: left
 	margin-right: 75px
 	a
-		color: #fff
+		color: #000
 		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline
@@ -159,13 +152,11 @@ b, strong
 	float: left
 	background: url("../img/top_icon_adress.png") no-repeat left center
 	padding-left: 22px
-	color: #fff
 	font-family: MuseoSansCyrl500
 	font-size: 12px
-	margin-top: 21px
 	font-weight: 500 
-	line-height: 1.2
-	min-height: 14px
+	line-height: 1.3
+	min-height: 16px
 
 .nopadding 
 	padding: 0 !important
@@ -327,38 +318,60 @@ b, strong
 
 
 /**************************************************/
+.col-left-top-mnu 
+	overflow: hidden
+
+.left_top_mnu_wrap 
+	width: 100%
+	background: transparent url("../img/bg_mnu.jpg") no-repeat top center
+	background-size: cover
+	overflow: hidden
+	min-height: 163px
+	padding-top: 15px
+
+.left_mnu._top 
+	overflow: hidden
+	width: 100%
+	margin-bottom: 0
+	padding-bottom: 0
 
 .left_mnu 
-	width: 270px
 	margin-bottom: 20px
-	background-color: #36a6cf
 	box-sizing: border-box
 	padding: 0
-	padding-bottom: 10px
 	.like_h2
-		background-color: rgb(31, 147, 190)
 		font-family: MuseoSansCyrl900
 		color: white
 		padding: 20px
 		font-size: 18px
-	li 
+	li
+		float: left
+		width: 230px
+		padding-right: 50px
+		display: block
+		line-height: 1.2
+		box-sizing: border-box
+		padding-left: 10px
+		background: url("../img/arr_li.png") no-repeat left 0 top 6px
+		margin-bottom: 15px
+		&:nth-child(3n) 
+			padding-right: 0
+		
 	a 
 		color: white
 		font-family: MuseoSansCyrl500
 		font-size: 15px
 		line-height: 30px
 		box-sizing: border-box
-		display: block
-		padding: 10px 20px
 		line-height: 1
 	
 		&:hover 
-			text-decoration: none 
-			background-color: #6AC3E4 
+			text-decoration: underline 
 
 .main_content 
-	padding-bottom: 20px
+	padding-bottom: 30px
 	overflow: hidden
+	padding-top: 40px
 		
 .content 
 	float: right
@@ -373,15 +386,18 @@ b, strong
 			margin-bottom: 0
 
 .banner 
-	margin-bottom: 25px
-		
+	margin-bottom: 25px	
 	
 h1 
 	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl700
-	font-size: 30px
-	margin-bottom: 30px
+	font-size: 36px
+	margin-bottom: 20px
 	line-height: 1
+	display: block
+	height: 100px
+	background: url("../img/glass_1.png") no-repeat left top
+	padding: 20px 0 0 20px 
 
 h2
 	color: rgb(47, 47, 47)
@@ -429,7 +445,6 @@ h3
 	margin: 0 0 15px 30px
 
 .price_table
-	background-color: #F2F2F2 
 	width: 100%
 	margin-top: 20px
 	margin-bottom: 20px
@@ -437,6 +452,7 @@ h3
 		padding: 10px 15px
 		box-sizing: border-box
 		vertical-align: middle
+		border-bottom: 1px solid #BDBDBD 
 
 	tr 
 		&:first-child 
@@ -444,12 +460,11 @@ h3
 			font-family: MuseoSansCyrl900
 			font-size: 15px
 			td 
-				background-color: #36a6cf
+				background-color: #6b6b6b
 				padding: 15px
 		&:nth-child(2n) 
-			background-color: #F2F2F2 
-		&:nth-child(2n+1) 
-			background-color: #EBEBEB 
+			
+		&:nth-child(2n+1) 	
 
 	td 
 		padding: 10px 15px
@@ -472,8 +487,6 @@ h3
 .price_table.inner_table
 	border: 1px solid rgb(54, 166, 207)
 	td 
-		background-color: #FFF 
-	
 			
 .last_news
 	margin-top: 45px
@@ -506,15 +519,15 @@ h3
 			text-decoration: none
 	
 .left_form
-	width: 270px
-	background-color: #36a6cf
+	width: 230px
+	background-color: #fff
 	box-sizing: border-box
-	padding: 20px 20px 39px 20px
+	padding: 20px 10px 10px
 	position: relative
 	.like_h3 
-		color: #fff
-		font-family: MuseoSansCyrl900
-		font-size: 18px
+		color: #000
+		font-family: MuseoSansCyrl700
+		font-size: 24px
 		margin-bottom: 20px
 		text-align: center
 		
@@ -524,11 +537,12 @@ h3
 		width: 100%
 		background-color: white
 		border: none
-		padding: 0 15px
+		padding: 0 10px
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl300
 		font-size: 15px
 		margin-bottom: 10px
+		border: 3px solid rgb(218, 227, 230)
 	
 	textarea 
 		box-sizing: border-box
@@ -536,66 +550,96 @@ h3
 		height: 89px
 		background-color: white
 		border: none
-		padding: 10px 15px
+		padding: 10px
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl300
 		font-size: 15px
 		margin-bottom: 10px
+		border: 3px solid rgb(218, 227, 230)
 	
 	button 
 		width: 100%
 		height: 39px
-		background-color: rgb(255, 240, 0)
+		background-color: rgb(255, 102, 0)
 		border: none
 		text-align: center
 		box-sizing: border-box
-		color: white
-		font-family: MuseoSansCyrl300
+		color: #fff
+		font-family: MuseoSansCyrl700
 		font-size: 15px
 		line-height: 18px
-		position: absolute
-		bottom: 0
-		left: 0
-		color: #000 
+		text-transform: uppercase
 		
 .left_widget_vk 
+	width: 230px
 	text-align: center
 	margin-top: 30px
 	margin-bottom: 20px
 
+.left_news 
+	.like_h3
+		font-style: 18px
+		font-family: MuseoSansCyrl900
+		margin-bottom: 20px
+	li 
+		margin-bottom: 25px
+	
+	a 
+		font-size: 15px
+		font-family: MuseoSansCyrl300
+		text-decoration: underline
+		color: #000 
+		&:hover 
+			text-decoration: none		
+
+	.all_articles 
+		display: block
+		width: 121px
+		box-sizing: border-box
+		height: 40px
+		background-color: rgb(255, 102, 0)
+		padding: 15px 24px
+		font-family: MuseoSansCyrl700
+		font-size: 12px
+		text-transform: uppercase
+		color: #FFF 
+		text-decoration: none
+		text-align: center
+		float: left
+
 .footer 
-	background-color: #36a6cf 
-	padding: 30px 0
-	color: #FFF 
+	background-color: #fff
+	color: #000
 	overflow: hidden
+	border-top: 1px solid #F60 
+	padding-bottom: 8px
 
 .copy
-	font-family: MuseoSansCyrl300
-	font-size: 14px
 	
 .footer_adress
 	font-family: MuseoSansCyrl500
 	font-size: 12px
-	margin-left: 45px
 	padding-left: 20px
 	background: url("../img/top_icon_adress.png") no-repeat left center
-	min-height: 14px
+	min-height: 16px
 	line-height: 1.2
 	overflow: hidden
+	margin-top: 30px
 
 .footer_phone 
 	font-family: MuseoSansCyrl700
 	font-size: 18px
 	padding-left: 20px
-	margin-left: 30px
 	background: url("../img/top_icon_phone.png") no-repeat left center
+	margin-top: 30px
 	span
 		font-size: 12px
 		font-family: MuseoSansCyrl500
 
 .footer_mail
+	margin-top: 30px
 	a
-		color: #FFF 
+		color: #000
 		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline
@@ -714,6 +758,10 @@ blockquote
 		display: block
 		background-repeat: no-repeat
 		background-position: 0 0 
+
+.m0 
+	margin: 0 !important
+
 .ml0 
 	margin-left: 0 !important
 	
