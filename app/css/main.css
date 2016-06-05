@@ -491,34 +491,28 @@ h1 {
   background: url("../img/glass_1.png") no-repeat left top;
   padding: 20px 0 0 20px; }
 
-h2 {
+.content h2 {
+  color: #2f2f2f;
+  font-family: MuseoSansCyrl700;
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+  min-height: 83px;
+  padding: 15px 0 0 20px;
+  background: url("../img/glass_2.png") no-repeat left top; }
+
+.content h3 {
   color: #2f2f2f;
   font-family: MuseoSansCyrl700;
   font-size: 24px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: block;
+  min-height: 59px;
+  padding: 10px 0 0 20px;
+  background: url("../img/glass_3.png") no-repeat left top; }
 
-h3 {
-  color: #2f2f2f;
-  font-family: MuseoSansCyrl900;
-  font-size: 18px;
-  margin-bottom: 20px; }
-
-.img_block {
-  width: 100%;
-  background-color: #36a6cf;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 25px;
-  overflow: hidden;
-  color: #fff;
-  font-family: MuseoSansCyrl300;
-  font-size: 15px; }
-
-.img_block_img {
-  float: left;
-  width: 270px;
-  font-size: 0;
-  line-height: 1; }
+.orange_left {
+  border-left: 4px solid #ff6600; }
 
 .img_block_text {
   padding: 20px;
@@ -566,8 +560,14 @@ h3 {
   .price_table tbody td:nth-child(2n) {
     width: 30%; }
 
-.price_table.inner_table {
-  border: 1px solid #36a6cf; }
+.price_table.inner_table tr:first-child td {
+  color: #FFF; }
+
+.price_table.inner_table td:nth-child(2n) {
+  color: #848484; }
+
+.price_table.inner_table td:nth-child(3n) {
+  color: #ff6600; }
 
 .last_news {
   margin-top: 45px; }
@@ -760,15 +760,15 @@ h3 {
         margin-left: 10px;
         display: inline; }
     .content .bread li span {
-      color: #36a6cf; }
+      color: #ff6600; }
 
 .content li {
   margin-bottom: 13px;
-  min-height: 22px; }
+  min-height: 20px; }
 
 .content ul li {
   padding-left: 35px;
-  background: url("../img/def.png") no-repeat left 0 top 10px; }
+  background: url("../img/def.png") no-repeat left top; }
 
 .content ol {
   list-style-type: none;
@@ -776,12 +776,9 @@ h3 {
   .content ol li:before {
     content: counter(num) " ";
     counter-increment: num;
-    color: #fff000;
-    font-family: MuseoSansCyrl700;
+    color: #ff6600;
+    font-family: MuseoSansCyrl900;
     font-size: 16px;
-    width: 25px;
-    height: 25px;
-    background-color: #36a6cf;
     text-align: center;
     display: block;
     float: left;
@@ -800,8 +797,8 @@ h3 {
   overflow: hidden; }
 
 blockquote {
-  background-color: #F2F2F2;
-  color: #36a6cf;
+  background-color: #fff;
+  color: #000;
   font-family: MuseoSansCyrl300;
   font-size: 15px;
   line-height: 21px;
@@ -812,23 +809,27 @@ blockquote {
   position: relative; }
   blockquote:before {
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 0;
     line-height: 1;
     background-image: url("../img/left_quote.png"); }
   blockquote b {
-    color: #2f2f2f;
+    color: #fff;
     font-family: MuseoSansCyrl500;
-    font-size: 15px; }
-  blockquote:after {
-    margin-bottom: 15px;
+    font-size: 15px;
+    background-color: #F60;
+    padding: 5px 5px 5px 30px;
     position: absolute;
-    bottom: 50px;
+    left: 0;
+    bottom: 0; }
+  blockquote:after {
+    position: absolute;
+    bottom: 0;
     right: 0;
     background-image: url("../img/right_quote.png"); }
   blockquote:before, blockquote:after {
-    width: 27px;
-    height: 24px;
+    width: 37px;
+    height: 38px;
     display: block;
     background-repeat: no-repeat;
     background-position: 0 0; }

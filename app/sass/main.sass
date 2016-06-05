@@ -398,43 +398,34 @@ h1
 	height: 100px
 	background: url("../img/glass_1.png") no-repeat left top
 	padding: 20px 0 0 20px 
+.content
+	h2
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl700
+		font-size: 30px
+		margin-bottom: 20px
+		display: block
+		min-height: 83px
+		padding: 15px 0 0 20px
+		background: url("../img/glass_2.png") no-repeat left top
+	h3
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl700
+		font-size: 24px
+		margin-bottom: 20px
+		display: block
+		min-height: 59px
+		padding: 10px 0 0 20px
+		background: url("../img/glass_3.png") no-repeat left top
 
-h2
-	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl700
-	font-size: 24px
-	margin-bottom: 20px
-
-h3
-	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl900
-	font-size: 18px
-	margin-bottom: 20px
-
-.img_block 
-	width: 100%
-	background-color: #36a6cf
-	box-sizing: border-box
-	margin-bottom: 25px
-	overflow: hidden
-	color: #fff
-	font-family: MuseoSansCyrl300
-	font-size: 15px
-	img 
-
-.img_block_img 
-	float: left
-	width: 270px
-	font-size: 0
-	line-height: 1
-
+.orange_left 
+	border-left: 4px solid rgb(255, 102, 0)
 
 .img_block_text 
 	padding: 20px
 	float: left
 	box-sizing: border-box
 	width: 600px
-
 
 .floatleft 
 	float: left
@@ -485,8 +476,17 @@ h3
 				width: 30%
 
 .price_table.inner_table
-	border: 1px solid rgb(54, 166, 207)
-	td 
+	tr
+		&:first-child 
+			td 
+				color: #FFF 
+	td
+		&:nth-child(2n) 
+			color: rgb(132, 132, 132) 
+		&:nth-child(3n) 
+			color: rgb(255, 102, 0)
+		
+		
 			
 .last_news
 	margin-top: 45px
@@ -684,17 +684,16 @@ h3
 					margin-left: 10px
 					display: inline
 			span
-				color: rgb(54, 166, 207)
+				color: rgb(255, 102, 0)
 
 .content 
 	li 
 		margin-bottom: 13px
-		min-height: 22px
+		min-height: 20px
 	ul 
 		li 
 			padding-left: 35px
-			background: url("../img/def.png") no-repeat left 0 top 10px
-			
+			background: url("../img/def.png") no-repeat left top 		
 	ol 
 		list-style-type: none
 		counter-reset: num
@@ -702,12 +701,9 @@ h3
 			&:before 
 				content: counter(num) ' '
 				counter-increment: num
-				color: rgb(255, 240, 0)
-				font-family: MuseoSansCyrl700
-				font-size: 16px			
-				width: 25px
-				height: 25px
-				background-color: rgb(54, 166, 207)
+				color: rgb(255, 102, 0)
+				font-family: MuseoSansCyrl900
+				font-size: 16px							
 				text-align: center
 				display: block
 				float: left
@@ -726,8 +722,8 @@ h3
 	overflow: hidden
 
 blockquote
-	background-color: #F2F2F2 
-	color: rgb(54, 166, 207)
+	background-color: #fff
+	color: #000
 	font-family: MuseoSansCyrl300
 	font-size: 15px
 	line-height: 21px
@@ -737,24 +733,28 @@ blockquote
 	position: relative
 	&:before
     position: absolute
-    top: 10px
+    top: 0
     left: 0
     line-height: 1
     background-image: url("../img/left_quote.png") 
 	b 
-		color: rgb(47, 47, 47)
+		color: #fff
 		font-family: MuseoSansCyrl500
 		font-size: 15px
+		background-color: #F60 
+		padding: 5px 5px 5px 30px
+		position: absolute
+		left: 0
+		bottom: 0
 	&:after
-  	margin-bottom: 15px
   	position: absolute
-  	bottom: 50px
+  	bottom: 0
   	right: 0
   	background-image: url("../img/right_quote.png") 
 	p
 	&:before, &:after
-		width: 27px
-		height: 24px
+		width: 37px
+		height: 38px
 		display: block
 		background-repeat: no-repeat
 		background-position: 0 0 
