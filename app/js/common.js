@@ -47,8 +47,28 @@ $(function() {
 	});
 	
 
+	// его .left_top_mnu_wrap
+	// под него .main_content
 
+	var top_mnu = $('.left_top_mnu_wrap');
 
-	/*******************Форма*************************/
+	if ($(window).width() < 1200) {
+		$('.left_top_mnu_wrap').remove();
+		$('.main_content').after(top_mnu);
+	}
+
+	$(window).resize(function() {
+		if ($(window).width() < 1200){
+			$('.left_top_mnu_wrap').remove();
+			$('.main_content').after(top_mnu);
+		}
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() > 1200 ){
+			$('.top').after(top_mnu);
+		}
+	});
+	
 
 });
