@@ -35,7 +35,7 @@
 .toggle-mnu span:before {
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -877,6 +877,11 @@ blockquote {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .logo {
+    position: static;
+    font-size: 0; }
+    .logo img {
+      height: 107px; }
   .col-mnu {
     background: none; }
   .slider_wrap {
@@ -937,6 +942,7 @@ blockquote {
     margin-right: 10px;
     min-height: 18px; }
   .top_adress {
+    margin-top: 10px;
     float: right;
     text-align: left; }
   .col-mnu {
@@ -961,7 +967,26 @@ blockquote {
     margin-bottom: 5px; }
   .img_block_text {
     float: none;
-    width: auto; } }
+    width: auto; }
+  .col-left-top-mnu {
+    padding: 0 15px !important;
+    overflow: hidden; }
+  .left_top_mnu_wrap {
+    height: auto;
+    overflow: hidden;
+    min-height: auto; }
+  .left_mnu._top {
+    height: auto;
+    overflow: hidden; }
+    .left_mnu._top li {
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: left;
+      background: none;
+      border-bottom: 1px solid #ccc; }
+      .left_mnu._top li a {
+        display: block; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {

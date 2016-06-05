@@ -2,6 +2,14 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.logo 
+		position: static
+		font-size: 0
+		img 
+			height: 107px
+		
+	
+
 	.col-mnu 
 		background: none
 	
@@ -74,6 +82,7 @@
 		min-height: 18px
 		
 	.top_adress 
+		margin-top: 10px
 		float: right
 		text-align: left
 	
@@ -108,9 +117,38 @@
 	.img_block_text 
 		float: none
 		width: auto
+
+	.col-left-top-mnu 
+		padding: 0 15px !important
+		overflow: hidden
 	
+	.left_top_mnu_wrap 
+		background-image: none 
+		background-color: rgb(113,113,113) 
+		height: auto
+		overflow: hidden
+		min-height: auto
+	
+	.left_mnu._top 
+		height: auto
+		overflow: hidden
+		ul 
+		li
+			width: 100%
+			padding-top: 5px
+			padding-bottom: 5px
+			text-align: left
+			background: none
+			border-bottom: 1px solid #ccc
+			a 
+				display: block
+				text-decoration: none
+					&:hover 
+						text-decoration: none
+								
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
+
 	.content 
 		ul 
 			margin-bottom: 20px
